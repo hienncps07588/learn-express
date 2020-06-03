@@ -24,7 +24,7 @@ app.get('/', function(req, res){
     });
 });
 app.get('/users/create', function(req, res){
-    res.render('/users/create');
+    res.render('users/create');
 });
 app.post('/users/create', function(req, res){
     users.push(req.body);
