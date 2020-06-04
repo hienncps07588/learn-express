@@ -16,6 +16,12 @@ var users = [{
 }, {
   id: 2,
   name: 'Hiii'
+}, {
+  id: 3,
+  name: 'Hien'
+}, {
+  id: 3,
+  name: 'Who'
 }];
 app.set('view engine', 'pug');
 app.set('views', './views');

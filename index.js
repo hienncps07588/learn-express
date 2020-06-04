@@ -7,7 +7,9 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 var users= [
     {id: 1, name: 'Linh'},
-    {id: 2, name: 'Hiii'}
+    {id: 2, name: 'Hiii'},
+    {id: 3, name: 'Hien'},
+    {id: 3, name: 'Who'}
 ];
 app.set('view engine', 'pug');
 app.set('views', './views');
