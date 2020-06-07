@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "name": "Helloo",
-      "id": "u6YzX5H4R"
-    },
-    {
       "name": "Hiến Nguyễn",
       "id": "tB9B8pGlH"
     },
@@ -19,6 +15,16 @@
     {
       "name": "Tấn Dũn",
       "id": "aFr31nP26"
+    },
+    {
+      "name": "Linhh",
+      "Phone": "0912312413",
+      "id": "KreKEIvAf"
+    },
+    {
+      "name": "Duy Tú",
+      "phone": "0912400773",
+      "id": "sBrYPFF_K"
     }
   ]
 }

@@ -1,6 +1,19 @@
-h1 Create
-form(action="/users/create", method="POST")
-    label(for="") Name
-    input(name="name" type="text")
+extends ../layout/common
 
-    button Create
+block content
+
+    h1 Create Users
+
+    if errors   
+        each error in errors
+            .alert.alert-danger= error
+
+    form(action="/users/create", method="POST")
+        .form-group
+        label(for="name") Name
+        input#name.form-control(type='search', placeholder='Create Name', name="name", value=values ? values.name : '')
+
+        label.mt-2(for="phone") Phone
+        input#phone.form-control(type='number', placeholder='Create Phone', name="phone", value=values ? values.phone : '')
+
+        button.btn.btn-outline-success.mt-2(type='submit') Create

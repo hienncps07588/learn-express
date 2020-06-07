@@ -16,7 +16,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 app.get('/', function (req, res) {
   res.render('index', {
-    name: 'Linhhh'
+    name: 'Hiến Nguyễn'
   });
 });
 app.use('/users', userRouter);

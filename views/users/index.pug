@@ -1,16 +1,28 @@
-h1 L....
+extends ../layout/common
 
-a(href="/users/create") New
+block content
 
-form(action="users/search", method="GET")
-    input(type="text", name="q")
-    button search
-ul
-    each user in users
-        li
-         span= user.name
-         span &nbsp;
-         a(href='/users/' + user.id) View   
+    h1
+        span.mr-2 Users
+        span &nbsp;
+        a.btn.btn-outline-success(href="/users/create") Add New
+    .d-flex
+        form.form-inline.my-2.my-lg-0(action="/users/search", method="GET")
+        input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search', name="q")
+        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+    table.mt-3.table
+        tr
+            th Name
+            th Phone
+            th Action
+
+        each user in users
+            tr
+                td= user.name
+                td= user.phone
+                td
+                    a.btn.btn-outline-secondary(href='/users/' + user.id) View   
 
 
-a(href="/") home
+    

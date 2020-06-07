@@ -12,7 +12,7 @@ app.set('views', './views');
 
 app.get('/', function(req, res){
     res.render('index', {
-        name: 'Linhhh'
+        name: 'Hiến Nguyễn'
     });
 });
 
