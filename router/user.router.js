@@ -1,13 +1,14 @@
 var express = require('express');
 
+var validate = require('../validate/users.validate');
+
 var controller = require('../controllers/user.controller');
 
 var router = express.Router();
 
-router.get('/', controller.index);
-
+router.get('/' ,controller.index);
 router.get('/create', controller.create);
-router.post('/create', controller.postCreate);
+router.post('/create',validate.postCreate, controller.postCreate);
 
 router.get('/:id', controller.get);
 

@@ -1,0 +1,1 @@
+"use strict";var db=require("../db");module.exports.requireAuth=function(e,r,u){e.cookies.userId&&db.get("users").find({id:e.cookies.userId}).value()?u():r.redirect("/auth/login")};

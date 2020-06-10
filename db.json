@@ -2,6 +2,7 @@
   "users": [
     {
       "name": "Hiến Nguyễn",
+      "Phone": "0964800613",
       "id": "tB9B8pGlH"
     },
     {
@@ -19,12 +20,24 @@
     {
       "name": "Linhh",
       "Phone": "0912312413",
-      "id": "KreKEIvAf"
+      "id": "KreKEIvAf",
+      "email": "nguyenconghien09@gmail.com",
+      "password": "4297f44b13955235245b2497399d7a93"
     },
     {
       "name": "Duy Tú",
       "phone": "0912400773",
       "id": "sBrYPFF_K"
+    },
+    {
+      "name": "Đức Sang",
+      "phone": "1234567890",
+      "id": "edR25pBHp"
+    },
+    {
+      "name": "Duy Tú",
+      "phone": "112345678900987",
+      "id": "Jco4uwAkH"
     }
   ]
 }
